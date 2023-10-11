@@ -1,2 +1,2 @@
 # Learning
-A personal repo for learning data structures, algorithms, and more
+A personal repo for learning/practicing data structures, algorithms, and more
