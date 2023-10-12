@@ -31,13 +31,19 @@
 - Useful for determining how efficient an algorithm or data structure might be, espically as size grows
 """
 
-# O(1) Algorithm - (Indexing array)
+# O(1) Algorithm - (Indexing array) - Constant Time
 def constAlgo(arr):
     if len(arr) == 0: # O(1) operation
         return None
     return arr[0] # O(1) operation
+"""
+Why is this O(1)?
+    Both operations are constant time, it doesnt matter the size of arr
+        If len(arr) meant we had to traverse every element in arr and increase count by 1,
+        then len(arr) would be O(n)
+"""
 
-# O(log n) Algorithm - (Binary Search)
+# O(log n) Algorithm - (Binary Search) - Logarithmic Time
 def binarySearch(arr, x):
     low = 0
     high = len(arr) - 1
@@ -48,7 +54,7 @@ def binarySearch(arr, x):
         elif arr[mid] > x:
             high = mid - 1
         else:
-            return mid
+            return str(mid) + " True"
     return False
 """
 Why is this O(log n)?
@@ -61,17 +67,84 @@ Why is this O(log n)?
     log(n) = log(8) = 3
 """
 
-# TODO: Implement O(n log n) Algorithm
+# O(n) Algorithm - Traverse 1D Array - Linear Time
+def traverse1D(arr1D):
+    for ele in arr1D:
+        print(ele)
+"""
+Why is this O(n)?
+    We iterate once through n elements, printing each one
+"""
 
-# TODO: Implement O(n^2) Algorithm
+# O(n log n) Algorithm - Quasilinear Time
+def searchBinarySearch(arr, x):
+    for li in arr:
+        print(binarySearch(li, x))
+"""
+Why is this O(n log n)?
+    We iterate through each element in li = n
+    For each of those elements, we use binary search which = log n
+    Therefore, O(n log n)
 
-# TODO: Implement O(2^n) Algorithm
+    This is a quick and easy way to demonstrate this time complexity
+    A more advanced O(n log n) algorithm is merge sort
+"""
 
-# TODO: Implement O(n!) Algorithm
+# O(n^2) Algorithm - Traverse 2D Array - Quadratic Time
+def traverse2D(arr2D):
+    for ele in arr2D:
+        for num in ele:
+            print(num)
+"""
+Why is this O(n^2)?
+    We iterate through n elements
+    Within each element we iterate through n numbers
+    = n * n = n^2
+"""
+
+# O(2^n) Algorithm - Exponential Time
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+"""
+Why is this O(2^n)?
+    Lets say that we give this algorithm n=4
+    The recursion tree will look something like this:
+
+                    4
+                3       2
+              2  1     1 0
+             1 0
+
+    Notice how the depth of the tree = 3
+    In reality, the complexity of this is O(2^n-1)
+    But since we get rid of constants, it becomes O(2^n)
+    Each level grows exponentially, level 3 = 2^3, level 2 = 2^2
+"""
+
+# O(n!) Algorithm - Factorial Time
+def factorial(n):
+    if n == 0:
+        print("***********")
+    for i in range(0, n):
+        factorial(n-1)
+"""
+Why is this O(n!)?
+    Lets say n = 4
+    This would print out 24 star lines, using recursion
+    4! = 4 * 3 * 2 * 1 = 24
+    If we plotted the recursive calls out in tree form, there would be 24 times where factorial(0)
+"""
 
 def main():
     print(constAlgo([1,2,3]))
     print(binarySearch([1,2,3,4,5,6,7], 7))
+    traverse1D([1,2,3])
+    searchBinarySearch([[1,2,3], [3, 4, 5], [5, 6, 10]], 3)
+    traverse2D([[1,1], [2,2], [3,3], [4,4]])
+    print(fibonacci(4))
+    factorial(4)
 
 if __name__=="__main__": 
     main() 
