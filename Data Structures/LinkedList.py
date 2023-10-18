@@ -89,8 +89,6 @@ class Node:
         self.data = data
         self.next = None
 
-# Linked List problem / algorithms
-
 def main():
     linkedList = LinkedList()
     node1 = Node(1)
