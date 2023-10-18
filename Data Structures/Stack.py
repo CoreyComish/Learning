@@ -1,4 +1,12 @@
-# Purpose: Learn and provide examples of Linked Lists
+# Purpose: Learn and provide examples of a Stack
+
+# What is a Stack?
+
+# What is a Stack useful for?
+
+# Stack operations and size
+
+# Stack implementation
 
 
 def main():
