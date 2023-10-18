@@ -36,16 +36,18 @@ def dynamicArr():
 
 # Array Operations & Size
 """
-Append: O(1)
-Pop: O(1)
+Access: O(1)
+Search: O(n)
 Insert: O(n)
+    Beginning: O(n)
+    End: O(1)
+    Middle: O(n)
 Delete: O(n)
-Get: O(1)
-Set: O(1)
-GetLength: O(1)
-min/max: O(n)
+    Beginning: O(n)
+    End: O(1)
+    Middle: O(n)
 
-space: O(n)
+Space: O(n)
 """
 def arrOperations():
     sampleArr = [0,1,2,3,4]
