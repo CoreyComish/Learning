@@ -100,6 +100,8 @@ def main():
     print(myQueue.queue)
     myQueue.dequeue()
     print(myQueue.queue)
+    myQueue.dequeue()
+    print(myQueue.queue)
 
     myQueueD = QueueD()
     node1 = Node(5)
