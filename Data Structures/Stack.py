@@ -52,6 +52,8 @@ def main():
     print(myStack.stack)
     myStack.pop()
     print(myStack.stack)
+    myStack.pop()
+    print(myStack.stack)
 
 if __name__=="__main__": 
     main() 
