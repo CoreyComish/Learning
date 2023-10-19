@@ -18,7 +18,7 @@ Circular linked list - data and pointer to next, tail points to head
 Circular Doubly linked list - data and pointers to prev and next, tail points to head
 """
 
-# Linked List opearations and size
+# Linked List opearations and space
 """
 Access: O(n)
 Search: O(n)
@@ -124,5 +124,5 @@ def main():
     linkedList.delete(node2)
     print(linkedList.walk())
 
-if __name__=="__main__": 
+if __name__== "__main__": 
     main() 

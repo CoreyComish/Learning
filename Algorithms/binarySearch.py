@@ -44,5 +44,5 @@ def main():
     for i in range(1, 7):
         print(binarySearch([1,2,3,4,5], i))
 
-if __name__=="__main__": 
+if __name__== "__main__": 
     main() 

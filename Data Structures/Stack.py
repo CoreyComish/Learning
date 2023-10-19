@@ -19,7 +19,7 @@ Depth First search
 Undo & Redo
 """
 
-# Stack operations and size
+# Stack operations and space
 """
 Access: O(n)
 Search: O(n)
@@ -57,5 +57,5 @@ def main():
     myStack.pop()
     print(myStack.stack)
 
-if __name__=="__main__": 
+if __name__== "__main__": 
     main() 

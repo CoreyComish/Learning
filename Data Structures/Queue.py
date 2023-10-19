@@ -21,7 +21,7 @@ Breadth first search
 MMO login system with full servers
 """
 
-# Queue operations and size
+# Queue operations and space
 """
 Access: O(n)
 Search: O(n)
@@ -123,6 +123,6 @@ def main():
     print(myQueueD.walk())
     #print(str(myQueueD.reverseWalk()) + ' Reverse Order')
 
-if __name__=="__main__": 
+if __name__== "__main__": 
     main() 
 

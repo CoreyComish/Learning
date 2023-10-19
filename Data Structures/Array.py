@@ -34,7 +34,7 @@ def dynamicArr():
         myDynamicArr.append(i)
         print(myDynamicArr)
 
-# Array Operations & Size
+# Array Operations and space
 """
 Access: O(1)
 Search: O(n)
@@ -105,5 +105,5 @@ def main():
     print(bubbleSort([5,4,3,2,1]))
     print(binarySearch(bubbleSort([5,4,3,2,1]), 5))
 
-if __name__=="__main__": 
+if __name__== "__main__": 
     main() 
