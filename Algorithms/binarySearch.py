@@ -14,7 +14,8 @@ Think of looking for a particular page in a large book
 # What is the Big O of binary search?
 """
 Binary search runs in O(log n) with O(1) space
-    O(log n) runtime because in the worst case the element we are searching for is at the start/end of the list
+    O(log n) runtime because in the worst case the element we are searching for 
+    is at the start/end of the list
     [1,2,3,4,5,6,7,8]
         if we are searching for 1 it looks like
         n = 8
@@ -45,4 +46,4 @@ def main():
         print(binarySearch([1,2,3,4,5], i))
 
 if __name__== "__main__": 
-    main() 
+    main()
