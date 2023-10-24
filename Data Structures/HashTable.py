@@ -36,7 +36,7 @@ hashtable[hash_code] = "Corey"
 Great at quick searches/inserts/deletions, but bad at ordering or sorting data
 Useful for tons of problems such as:
     Finding duplicates
-    Detetcting anagrams
+    Detecting anagrams
     Searching for substrings
     Database
     Caching
