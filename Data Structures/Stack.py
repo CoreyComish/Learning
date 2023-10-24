@@ -2,7 +2,7 @@
 
 # What is a Stack?
 """
-Data structure that represents a dynamic state of data
+Data structure that represents a dynamic set of data
 First In, Last Out /// Last In, First Out
 Think of it as a physical stack of items
 Pushing adds to the stack, popping removes the item on top of the stack
