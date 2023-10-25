@@ -75,8 +75,8 @@ Insert: O(log n)
 Delete: O(log n)
     For most trees, this is true even in the worst case
     For binary search trees, in the worst case these are O(n)
-    This is because binary search trees are not guarenteed to be balanced
-        The worse case height of a tree with n nodes in n-1
+    This is because binary search trees are not guaranteed to be balanced
+        The worst case height of a tree with n nodes is n-1
         Therefore our operations could be O(n)
         5
        4
