@@ -7,7 +7,7 @@ Non-Linear
 A connected, undirected graph with no cycles
 A collection of nodes, connected by edges, hierarchial relationship between nodes
 Many different types of trees, but they all contain the following properties:
-Root = The beggining node, Level 0
+Root = The beginning node, Level 0
 Branches/Edge = Connection between nodes, usually two per node
 Leafs = The last nodes in the tree
 Parent = Node that is one level above and connected by an edge
@@ -31,7 +31,8 @@ Red-Black Tree
     Self balancing Binary Search Tree
     Each node has an extra bit, often interpreted as red or black
     These colors help ensure that the tree remains balanced
-... and many more
+
+..and many more trees
 """
 
 # What are the different ways we can traverse a tree?
