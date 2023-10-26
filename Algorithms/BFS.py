@@ -7,10 +7,11 @@ Breadth means broad or wide, we search horizontally or level by level
 BFS is implemented via a Queue
 
 General Steps:
-    1. Add Node to Queue
-    2. Mark Node as visited
-    3. Add adjacent nodes to Queue
-    4. Pop node from Queue
+    1. Add Starting Root Node to Queue
+    2. Extract the Node from the Queue
+    3. Insert the extracted Node's children into the queue
+    4. Mark the extracted Node as visited / Compare to Search
+    Repeat 2-4
 """
 
 # Why is BFS useful?
