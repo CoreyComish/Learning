@@ -49,10 +49,10 @@ This can be useful for low-level device control, error detection algorithms, dat
 Imagine we're in a land of 8-bit integers...
 We use the first bit to represent whether the integer is negative or not
 
-    18 = 00010010
-   -18 = 11101110
-
-   (notice how each bit is inversed)
+    18 = 0001 0010
+invert = 1110 1101
+add 1
+   -18 = 1110 1110
 
 This is called the Two's complement
     1) Convert number to binary
