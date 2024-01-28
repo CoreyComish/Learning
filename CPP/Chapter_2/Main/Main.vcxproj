@@ -23,6 +23,10 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="subtract.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="input.h" />
+    <ClInclude Include="subtract.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

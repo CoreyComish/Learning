@@ -1,5 +1,7 @@
 // Chapter 2 Learnings from learncpp.com
 #include <iostream>
+#include "subtract.h"
+#include "input.h"
 
 void doPrint()
 {
@@ -16,10 +18,7 @@ int doubleNumber(int num)
 	return num * 2;
 }
 
-
 int add(int x, int y); // Function Declaration
-int subtract(int x, int y); // Function Declaration from a seperate .cpp file
-int readUserInt(); // Function Declaration from a seperate .cpp file
 
 int main()
 {
@@ -30,6 +29,12 @@ int main()
 	std::cout << "Double your number is: " << doubleNumber(x) << '\n';
 	std::cout << add(10, 12) << '\n';
 	std::cout << subtract(15, 10) << '\n';
+
+	int a{ readNumber() };
+	int b{ readNumber() };
+	std::cout << "Adding your numbers together..\n";
+	writeAnswer(a + b);
+
 	std::cout << "Ending main()\n";
 	return 0;
 }
